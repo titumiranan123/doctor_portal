@@ -92,17 +92,27 @@ const Navbar = () => {
 
                 {
                     !open && <>
+
                         <motion.div
                             initial={{ x: 50, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
-                            exit={{ x: 30, opacity: 0 }} className='bg-black absolute text-white flex   flex-col p-10 right-0 top-20 z-50 space-y-4 text-xl font-semibold w-1/4 min-h-screen' >
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Home</Link>
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Doctors</Link>
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Hospitals</Link>
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Ambulance</Link>
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Care Giver</Link>
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Blog</Link>
-                            <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Contact</Link>
+                            exit={{ x: 30, opacity: 0 }} className='bg-black absolute text-white  p-10 right-0 top-20 z-50 space-y-4 text-xl font-semibold w-2/4 h-screen' >
+                            <div className=' flex items-center '>
+                                <Image
+                                    alt="Description of the image"
+                                    className='h-16 w-16'
+                                    src={logo} />
+                                <span className='text-[2.25rem] font-bold'><span className='text-red-600'>M</span><span className="text-white">EDIMART</span></span>
+                            </div>
+                            <div className='flex   flex-col gap-3'>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Home</Link>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Doctors</Link>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Hospitals</Link>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Ambulance</Link>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Care Giver</Link>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Blog</Link>
+                                <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Contact</Link>
+                            </div>
 
                         </motion.div>
                     </>
