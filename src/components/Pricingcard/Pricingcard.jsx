@@ -5,7 +5,10 @@ import { FaArrowRight } from 'react-icons/fa';
 import './Pricecard.css'
 const Pricingcard = ({ title, price }) => {
     return (
-        <div className='lg:w-[550px] w-full p-10 space-y-4 shadow-2xl'>
+        <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className='lg:w-[550px] w-full p-10 space-y-4 shadow-2xl'>
             <div className='space-y-4' >
                 <p className="text-lg text-blue-500">{title} </p>
                 <p className='text-4xl font-bold'>$ {price}</p>

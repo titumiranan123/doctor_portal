@@ -5,6 +5,7 @@ import Link from 'next/link';
 import logo from '../assets/logo.png';
 import Image from 'next/image';
 import { FaBars } from "react-icons/fa";
+import { FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion"
 
 const Navbar = () => {
@@ -29,7 +30,27 @@ const Navbar = () => {
                             className="bubble hidden group-hover:block"></div>
                     </li>
                     <li className="relative text-black hover:text-red-500 nav-item group">
-                        <a href="#" className=" hover:underline">Services</a>
+                        <a href="#" className=" hover:underline">Doctors</a>
+                        <div
+                            className="bubble hidden group-hover:block"></div>
+                    </li>
+                    <li className="relative text-black hover:text-red-500 nav-item group">
+                        <a href="#" className=" hover:underline">Hospitals</a>
+                        <div
+                            className="bubble hidden group-hover:block"></div>
+                    </li>
+                    <li className="relative text-black hover:text-red-500 nav-item group">
+                        <a href="#" className=" hover:underline">Ambulance</a>
+                        <div className="bubble hidden group-hover:block"></div>
+                    </li>
+
+                    <li className="relative text-black hover:text-red-500 nav-item group">
+                        <a href="#" className=" hover:underline">Care Giver</a>
+                        <div className="bubble hidden group-hover:block"></div>
+                    </li>
+                    <li className="relative text-black hover:text-red-500 nav-item group">
+
+                        <a href="#" className=" hover:underline">Blog</a>
                         <div className="bubble hidden group-hover:block"></div>
                     </li>
                     <li className="relative text-black hover:text-red-500 nav-item group">
@@ -42,9 +63,10 @@ const Navbar = () => {
                         <div className="bubble hidden group-hover:block"></div>
                     </li>
                 </ul>
-                <div className='text-black'>
-                    <Link href={'/login'} >Logout</Link>
-                    <Link href={'/login'} >Login</Link>
+                <div className='text-black font-semibold'>
+                    <Link href={'/login'} >Logout </Link>
+                    &#47;
+                    <Link href={'/login'} >  Login</Link>
                 </div>
             </div>
             <div className='flex lg:hidden relative justify-around  w-[100vw]'>
@@ -56,7 +78,10 @@ const Navbar = () => {
                     <span className='text-[2.25rem] font-bold'><span className='text-red-600'>M</span><span className="text-black">EDIMART</span></span>
                 </div>
                 <div className='text-[1.5rem] flex items-center text-black'>
-                    <button className='bg-red-600 p-2' onClick={toggolemenu}>  <FaBars /></button>
+                    <button className='bg-red-600 p-2' onClick={toggolemenu}>  {open ? <FaBars /> :
+                        <FiX />}
+
+                    </button>
 
                 </div>
 
@@ -70,7 +95,7 @@ const Navbar = () => {
                         <motion.div
                             initial={{ x: 50, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
-                            exit={{ x: 30, opacity: 0 }} className='bg-black absolute text-white flex   flex-col p-10 right-0 top-20 z-50 space-y-4 text-xl font-semibold w-3/4 min-h-screen' >
+                            exit={{ x: 30, opacity: 0 }} className='bg-black absolute text-white flex   flex-col p-10 right-0 top-20 z-50 space-y-4 text-xl font-semibold w-1/4 min-h-screen' >
                             <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Home</Link>
                             <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Doctors</Link>
                             <Link className='hover:text-red-500 hover:underline transition ease-linear duration-200' href={'/'}>Hospitals</Link>

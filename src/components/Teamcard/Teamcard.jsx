@@ -6,7 +6,10 @@ import { motion } from "framer-motion"
 import './Teamcard.css'
 const Teamcard = ({ img, name, degination }) => {
     return (
-        <div className='w-full group lg:w-80'>
+        <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className='w-full group lg:w-80'>
             <div className='relative'>
                 <motion.div
                     whileHover={{ scale: 1.07 }}

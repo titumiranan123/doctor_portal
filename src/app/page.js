@@ -1,3 +1,4 @@
+'use client'
 import About from '@/components/About/About'
 import Apoinment from '@/components/Apoimment/Apoinment'
 import Category from '@/components/Category/Category'
@@ -11,9 +12,17 @@ import Subscribe from '@/components/Subscribe/Subscribe'
 import Team from '@/components/Team/Team'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import Chooseus from '@/components/Whychooseus/Chooseus'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      mirror: true
+    });
+  })
   return (
     <main className="">
       <Navbar />

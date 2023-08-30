@@ -5,7 +5,7 @@ import headerImg from '../../assets/Untitled design copy.png';
 
 const Header = () => {
     return (
-        <div className='bg-[#3B489D] relative md:h-[680px] flex justify-center items-center lg:h-min  p-4 lg:px-10 px-3'>
+        <div className='bg-[#3B489D] relative md:h-[680px] lg:h-[890px] flex justify-center items-center   p-4 lg:px-10 px-3'>
             <div className='flex flex-wrap lg:flex-nowrap justify-center gap-5 items-center'>
                 <div className=' mt-5  items-center'>
                     <p className='text-white text-[24px]'>Highest Level of service you can find</p>

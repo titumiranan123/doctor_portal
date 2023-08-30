@@ -12,7 +12,10 @@ const Process = () => {
 
             </div>
             <div className='grid md:grid-cols-2  grid-cols-1 lg:grid-cols-3  mt-10 gap-6'>
-                <div className='w-full bg-white lg:w-[450px]'>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className='w-full bg-white lg:w-[450px]'>
                     <div className='relative'>
                         <div
 
@@ -27,7 +30,10 @@ const Process = () => {
                     </div>
 
                 </div >
-                <div className='w-full lg:w-[450px]'>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className='w-full lg:w-[450px]'>
                     <div className='relative'>
                         <div
 
@@ -42,7 +48,10 @@ const Process = () => {
                     </div>
 
                 </div >
-                <div className='w-full lg:w-[450px]'>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className='w-full lg:w-[450px]'>
                     <div className='relative'>
                         <div
 

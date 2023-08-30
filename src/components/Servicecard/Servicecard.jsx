@@ -4,7 +4,10 @@ import React from 'react';
 import { motion } from "framer-motion"
 const Servicecard = ({ img, title, description }) => {
     return (
-        <div className='rounded-2xl w-full md:w-96 h-96 shadow-xl mb-10 border  border-blue-500 p-3'>
+        <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className='rounded-2xl w-full md:w-96 h-96 shadow-xl mb-10 border  border-blue-500 p-3'>
             <motion.div
                 whileHover={{ scale: 1.07 }}
                 whileTap={{ scale: 0.9 }}
