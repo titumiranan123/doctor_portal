@@ -1,0 +1,8 @@
+.social-link {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 0);
+    width: 100%;
+    /* z-index: 2; */
+    transition: all 500ms ease;
+}

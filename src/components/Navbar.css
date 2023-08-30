@@ -1,0 +1,28 @@
+/* styles.css or styles.scss */
+.nav-item {
+
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+.nav-item:hover {
+    color: rgb(212, 38, 38);
+}
+
+.bubble {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(177, 38, 38, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.group:hover .bubble {
+    opacity: 1;
+}
